@@ -98,3 +98,67 @@ body {
 .stats p {
     font-size: 0.8rem;
 }
+
+
+
+/*   About Section.  */
+
+
+
+
+.about-section h2,
+.about-section h4 {
+    color: #1a1a1a;
+}
+
+/* Key Features with Icon Left and Text Right */
+.feature-item .icon-box {
+    background-color: #e6f4f1;
+    /* light greenish bg to match your screenshot */
+    color: #00b386;
+    /* primary brand green */
+    min-width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+/* Optional: Add hover effects */
+.feature-item:hover .icon-box {
+    background-color: #00b386;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.stat-box {
+    background-color: #cffcfa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+
+.stats-row i {
+    display: block;
+}
+
+/* Responsive image sizing */
+.about-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive text spacing */
+@media (max-width: 768px) {
+    .about-section .feature-box {
+        text-align: center;
+    }
+}
+
+.features {
+    border: 2px solid silver;
+    border-radius: 18px;
+    padding: 13px;
+}
