@@ -1,0 +1,100 @@
+body {
+    background: #d9fffe;
+    /* Light mint gradient-like tone */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    padding: 80px 0;
+}
+
+.text-con {
+    margin-top: 15px;
+}
+
+/* Badge on the image (AI) */
+.ai-badge {
+    position: absolute;
+    top: 55px;
+    right: 30px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 2;
+}
+
+/* Circle badge at bottom-left of image */
+.circle-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 15%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Apply custom color for all devices */
+.btn-primary {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+
+.btn-primary:hover {
+    background-color: #0097a7;
+    border-color: #0097a7;
+}
+
+
+
+/* Medium devices */
+@media (max-width: 1200px) {
+    .btn-primary {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .mainhd,
+    .mainpg {
+        margin-left: 20px;
+    }
+
+
+    .ai-img {
+        padding: 20px;
+    }
+
+    .ai-badge {
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        background-color: #ff6b6b;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 14px;
+        z-index: 2;
+    }
+
+}
+
+.stats div {
+    margin: 20px;
+}
+
+/* Stats section */
+.stats h4 {
+    font-size: 2rem;
+}
+
+.stats p {
+    font-size: 0.8rem;
+}
