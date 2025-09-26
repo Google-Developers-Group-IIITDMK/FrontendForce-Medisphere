@@ -162,3 +162,45 @@ body {
     border-radius: 18px;
     padding: 13px;
 }
+
+
+/*. Evolution */
+
+
+.evolution-section {
+    background: #fdfdfd;
+}
+
+.evolution-box {}
+
+.evolution-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eef2f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.evolution-list li {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    background: #f9fbfd;
+    color: #555;
+}
+
+.evolution-list li.highlight {
+    background: #b4fae5;
+    color: #222;
+}
+
+@media (max-width: 768px) {
+    .evolution-list li {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
