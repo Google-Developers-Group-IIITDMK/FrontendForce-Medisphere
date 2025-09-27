@@ -342,3 +342,93 @@ body {
     bottom: -10px;
     left: auto;
 }
+
+
+
+/* Our Global Impact */
+
+.global-impact {
+    background-color: #d9ffeb;
+    border-radius: 25px;
+
+}
+
+.global-impact h2 {
+    font-size: 1.8rem;
+}
+
+.global-impact h3 {
+    font-size: 1.6rem;
+}
+
+.global-impact .text-primary {
+    color: #0097b2 !important;
+    /* Match your screenshot blue */
+}
+
+.global-impact p {
+    margin: 0;
+}
+
+
+/*. Contact section */
+
+.contact-section {}
+
+.contact-form {
+    background: rgba(255, 255, 255, 0.6);
+    /* transparent white */
+    backdrop-filter: blur(12px);
+    /* glass effect */
+    -webkit-backdrop-filter: blur(12px);
+    /* Safari support */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    /* subtle border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form .form-control {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: #0097b2;
+    box-shadow: 0 0 8px rgba(0, 151, 178, 0.3);
+}
+
+.contact-form .form-control {
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+
+}
+
+.contact-form .btn-primary {
+    background: linear-gradient(90deg, #0097b2, #0066cc);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.contact-info .info-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-info .info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
