@@ -3,6 +3,7 @@ body {
     /* Light mint gradient-like tone */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 /* Gradient brand text animation */
 @keyframes gradientShift {
     0% {
@@ -134,15 +135,81 @@ body {
 }
 
 
+/* ===== Hero Section ===== */
 .hero-section {
     padding: 80px 0;
+    background: #f5f9ff;
+    /* subtle light background */
 }
 
+/* ===== Text Column ===== */
 .text-con {
     margin-top: 15px;
+    animation: fadeInLeft 1s ease forwards;
 }
 
-/* Badge on the image (AI) */
+/* Gradient animated heading */
+.text-gradient {
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s ease infinite;
+}
+
+/* Slide-in text */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Gradient animation for text */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 198, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 198, 255, 0.6);
+}
+
+.btn-outline-secondary {
+    transition: all 0.3s;
+}
+
+.btn-outline-secondary:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 198, 255, 0.1);
+    border-color: #00c6ff;
+    color: #0072ff;
+}
+
+/* ===== AI Badge ===== */
 .ai-badge {
     position: absolute;
     top: 55px;
@@ -154,6 +221,20 @@ body {
     font-weight: bold;
     font-size: 14px;
     z-index: 2;
+    animation: pulse 2s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
 }
 
 /* Circle badge at bottom-left of image */
@@ -171,20 +252,52 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Apply custom color for all devices */
-.btn-primary {
-    background-color: #00bcd4;
-    border-color: #00bcd4;
+/* ===== Image ===== */
+.ai-img img {
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
-.btn-primary:hover {
-    background-color: #0097a7;
-    border-color: #0097a7;
+.ai-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* ===== Stats Cards ===== */
+.stats div {
+    margin: 20px;
+}
 
+.stats h4 {
+    font-size: 2rem;
+}
 
-/* Medium devices */
+.stats p {
+    font-size: 0.8rem;
+}
+
+.stat-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Media Queries ===== */
 @media (max-width: 1200px) {
     .btn-primary {
         font-size: 16px;
@@ -196,37 +309,14 @@ body {
         margin-left: 20px;
     }
 
-
     .ai-img {
         padding: 20px;
     }
 
     .ai-badge {
-        position: absolute;
         top: 10px;
         right: 30px;
-        background-color: #ff6b6b;
-        color: white;
-        padding: 8px 16px;
-        border-radius: 50%;
-        font-weight: bold;
-        font-size: 14px;
-        z-index: 2;
     }
-
-}
-
-.stats div {
-    margin: 20px;
-}
-
-/* Stats section */
-.stats h4 {
-    font-size: 2rem;
-}
-
-.stats p {
-    font-size: 0.8rem;
 }
 
 
@@ -474,7 +564,6 @@ body {
 }
 
 
-
 /* Our Global Impact */
 
 .global-impact {
@@ -566,7 +655,7 @@ body {
 
 /* Global Map */
 .global-map-section {
-    
+    background: ;
 }
 
 .map-container img {
@@ -673,32 +762,4 @@ body {
     background: #00c3ff;
     color: #fff;
     transform: translateY(-4px);
-}
-
-/* Bottom */
-.footer-bottom {
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    padding-top: 15px;
-}
-
-.footer-bottom p {
-    font-size: 13px;
-    color: #9eb2c1;
-    margin: 0;
-}
-
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-    .footer-top {
-        text-align: center;
-    }
-
-    .footer-brand p {
-        margin: 0 auto;
-    }
-
-    .footer-social .social-icons {
-        justify-content: center;
-    }
 }
