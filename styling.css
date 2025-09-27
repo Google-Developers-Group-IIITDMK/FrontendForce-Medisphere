@@ -432,3 +432,143 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+
+/* Global Map */
+.global-map-section {
+    
+}
+
+.map-container img {
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 19px 19px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Base */
+.footer {
+    background: linear-gradient(135deg, #0a1a2f, #0b2239);
+    /* modern gradient */
+    color: #dbe4ec;
+    padding: 60px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Top section (grid) */
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-brand h2 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #b0c7d6;
+    max-width: 280px;
+}
+
+/* Links */
+.footer-links h4,
+.footer-social h4 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-links h4::after,
+.footer-social h4::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #00c3ff;
+    margin-top: 6px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #dbe4ec;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #00c3ff;
+    padding-left: 5px;
+}
+
+/* Social Icons */
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icons a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dbe4ec;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    background: #00c3ff;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+/* Bottom */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 15px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #9eb2c1;
+    margin: 0;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .footer-top {
+        text-align: center;
+    }
+
+    .footer-brand p {
+        margin: 0 auto;
+    }
+
+    .footer-social .social-icons {
+        justify-content: center;
+    }
+}
