@@ -82,7 +82,7 @@ MediSphere/
 
   <hr>
 
-  <h2>👨‍💻 Author</h2>
+  <h2>👨‍💻 Authors</h2>
   <p>
     <b>D. Aryan Mithesh</b><br>
     🎓 Computer Science Engineering @ IIITDM Kurnool<br>
