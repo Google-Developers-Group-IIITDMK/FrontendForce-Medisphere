@@ -4,6 +4,21 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+a {
+    text-decoration: none;
+    /* removes underline */
+    color: inherit;
+    /* keeps text color same as parent */
+}
+
+a:hover {
+    text-decoration: none;
+    /* make sure hover also doesn’t add underline */
+}
+
+
+
 /* Gradient brand text animation */
 @keyframes gradientShift {
     0% {
@@ -138,7 +153,7 @@ body {
 /* ===== Hero Section ===== */
 .hero-section {
     padding: 80px 0;
-  
+
 }
 
 /* ===== Text Column ===== */
@@ -653,9 +668,7 @@ body {
 
 
 /* Global Map */
-.global-map-section {
-   
-}
+.global-map-section {}
 
 .map-container img {
     max-width: 90%;
@@ -770,16 +783,17 @@ body {
     --primary: 199 95% 47%;
     --primary-foreground: 0 0% 98%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --medical-teal-light: 174 72% 85%; /* Light teal background from image */
+    --medical-teal-light: 174 72% 85%;
+    /* Light teal background from image */
     --medical-blue: 199 95% 47%;
     --medical-teal: 174 72% 56%;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--medical-blue)), hsl(var(--medical-teal)));
-    
+
     /* Shadows */
     --shadow-medical: 0 4px 20px hsl(var(--medical-blue) / 0.15);
-    
+
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -822,7 +836,8 @@ body {
 }
 
 .feature-card {
-    background: #D9FFFE; /* Light teal background */
+    background: #D9FFFE;
+    /* Light teal background */
     padding: 2rem;
     border-radius: 1rem;
     text-align: center;
@@ -852,7 +867,7 @@ body {
     margin-bottom: 1rem;
     color: hsl(var(--medical-blue));
     transition: var(--transition-smooth);
-     color: #212529; 
+    color: #212529;
 }
 
 .feature-card:hover .feature-title {
