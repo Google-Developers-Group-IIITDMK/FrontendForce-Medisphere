@@ -86,7 +86,7 @@ MediSphere/
   <p>
     <b>D. Aryan Mithesh</b><br>
     🎓 Computer Science Engineering @ IIITDM Kurnool<br>
-    🚀 Passionate Frontend Developer | Aspiring AI/ML Engineer<br>
+    🚀 Passionate Fullstack Developer | Aspiring AI/ML Engineer<br>
     🔗 <a href="https://aryansportfolio.ccbp.tech" target="_blank">Portfolio</a> | 
     <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a> | 
     <a href="https://github.com/" target="_blank">GitHub</a>
